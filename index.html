@@ -309,7 +309,7 @@
       
         
           
-            <p>​       2019年4月27日，我开始对数模的研究，参加学院组织的培训课。才大一的我并没有信心能够从校赛中脱颖而出，只是希望从这次实战中能够获取到一些经验用于以后的发展。今天五月一日，做个简短的开头，此次校赛我负责建模部分，先进制造学院的王同学负责编程部分，和我同一学院的霍同学负责论文部分。今天一直在准备Matlab的安装，没想到这个软件这么难安装，下载也很费时间，大概有18个G左右。</p>
+            <p> &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;2019年4月27日，我开始对数模的研究，参加学院组织的培训课。才大一的我并没有信心能够从校赛中脱颖而出，只是希望从这次实战中能够获取到一些经验用于以后的发展。今天五月一日，做个简短的开头，此次校赛我负责建模部分，先进制造学院的王同学负责编程部分，和我同一学院的霍同学负责论文部分。今天一直在准备Matlab的安装，没想到这个软件这么难安装，下载也很费时间，大概有18个G左右。</p>
 
           
         
@@ -428,19 +428,21 @@
 
       
         
-          
-            <p>大一下半学期我开始系统地学习C++语言，现在将会把学习中遇到的问题及解决方案放在这里，积累经验，Fighting!</p>
-<h3 id="问题一：开发工具的安装"><a href="#问题一：开发工具的安装" class="headerlink" title="问题一：开发工具的安装"></a>问题一：开发工具的安装</h3><p>这里我使用的是Visual Stdio 2017版本，第一次安装时我一路默认安装，最后发现安装后并不能进行C++的开发。原因是在安装过程中，安装驱动会提示所要进行的开发任务，这时要选择C++，安装完成后才能进行C++的开发。</p>
-<h3 id="问题二：程序写好了但不能运行（F5为灰色）"><a href="#问题二：程序写好了但不能运行（F5为灰色）" class="headerlink" title="问题二：程序写好了但不能运行（F5为灰色）"></a>问题二：程序写好了但不能运行（F5为灰色）</h3><p>在新建时要注意新建项目而不是文件，新建文件的话生成的xx.cpp是无法编译运行的，需要新建项目后写入代码生成xx.sln才能编译运行。<img src="C:\Users\cjy\blog\source\_posts\cpp的学习\example.PNG" alt="example.PNG"></p>
-<h3 id="问题三：Visual-Stdio-2017版本只要修改了文件名就打不开（2019512）"><a href="#问题三：Visual-Stdio-2017版本只要修改了文件名就打不开（2019512）" class="headerlink" title="问题三：Visual Stdio 2017版本只要修改了文件名就打不开（2019512）"></a>问题三：Visual Stdio 2017版本只要修改了文件名就打不开（2019512）</h3><p>在实践中，我有几次修改了文件夹的名称，就不能再打开了，xx.cpp的文件可以用vc6.0打开但中文注释全是乱码。既然如此，，，那我就不修改文件名了（笑cry），今天在百度上学到了新的建立cpp文件的方法，是建立一个空项目，再右键源文件选择新建cpp文件、.h头文件、类文件。感觉这样的新建可能会更灵活一些。</p>
-<h3 id="问题四：析构函数没有被调用（2019-5-23）"><a href="#问题四：析构函数没有被调用（2019-5-23）" class="headerlink" title="问题四：析构函数没有被调用（2019.5.23）"></a>问题四：析构函数没有被调用（2019.5.23）</h3><p>在C++习题四书面作业中，编程出现了小问题，我在类内定义了默认构成函数以及析构函数，自己编写的析构函数输出“destruction…”但运行时析构函数并没有被调用。代码如下：</p>
-<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;string&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Publication</span> &#123;</span></span><br><span class="line"><span class="keyword">protected</span>:</span><br><span class="line">	<span class="built_in">string</span> title;</span><br><span class="line">	<span class="built_in">string</span> name;</span><br><span class="line">	<span class="keyword">float</span> price;</span><br><span class="line">	<span class="built_in">string</span> date;</span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">	Publication() &#123;&#125;;</span><br><span class="line">	<span class="function"><span class="keyword">void</span> <span class="title">inputData</span><span class="params">()</span> </span>&#123; </span><br><span class="line">		<span class="comment">//cout &lt;&lt; "Please input title,name,price and date:\n" &lt;&lt; endl;</span></span><br><span class="line">	    <span class="built_in">cin</span> &gt;&gt; title &gt;&gt; name &gt;&gt; price &gt;&gt; date; </span><br><span class="line">		<span class="comment">//return 0; </span></span><br><span class="line">	&#125;;</span><br><span class="line">	<span class="function"><span class="keyword">void</span> <span class="title">display</span><span class="params">()</span> </span>&#123; <span class="built_in">cout</span> &lt;&lt; <span class="string">"Title:"</span> &lt;&lt; title &lt;&lt;<span class="string">'\t'</span>&lt;&lt; <span class="string">"Name:"</span> &lt;&lt; name &lt;&lt;<span class="string">'\t'</span>&lt;&lt; <span class="string">"Price:"</span> &lt;&lt; price &lt;&lt;<span class="string">'\t'</span>&lt;&lt; <span class="string">"Date:"</span>&lt;&lt; date&lt;&lt;<span class="string">'\t'</span>; &#125;</span><br><span class="line">	~Publication() &#123; <span class="built_in">cout</span> &lt;&lt; <span class="string">"destructor...Publication"</span> &lt;&lt; <span class="built_in">endl</span>; &#125;</span><br><span class="line">&#125;;</span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Book</span> :</span><span class="keyword">public</span> Publication &#123;</span><br><span class="line"><span class="keyword">private</span>:</span><br><span class="line">	<span class="keyword">int</span> page;</span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">	Book() &#123; <span class="built_in">cout</span> &lt;&lt; <span class="string">"Please input title, name, price, date and page:\n"</span> &lt;&lt; <span class="built_in">endl</span>; &#125;;</span><br><span class="line">	~Book() &#123; <span class="built_in">cout</span> &lt;&lt; <span class="string">"destructor...Book"</span>&lt;&lt; <span class="built_in">endl</span>; &#125;;</span><br><span class="line">	<span class="function"><span class="keyword">void</span> <span class="title">inputData</span><span class="params">()</span> </span>&#123;</span><br><span class="line">		Publication::inputData();</span><br><span class="line">		<span class="built_in">cin</span> &gt;&gt; page;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="function"><span class="keyword">void</span> <span class="title">display</span><span class="params">()</span> </span>&#123;</span><br><span class="line">		Publication::display();</span><br><span class="line">		<span class="built_in">cout</span> &lt;&lt; <span class="string">"page:"</span>&lt;&lt;page&lt;&lt;<span class="built_in">endl</span>;</span><br><span class="line">	&#125;</span><br><span class="line">&#125;;</span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">CD</span> :</span><span class="keyword">public</span> Publication &#123;</span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">	CD() &#123; <span class="built_in">cout</span> &lt;&lt; <span class="string">"Please input title, name, price, date and playtime:\n"</span> &lt;&lt; <span class="built_in">endl</span>; &#125;;</span><br><span class="line">	~CD() &#123; <span class="built_in">cout</span> &lt;&lt; <span class="string">"destructor...CD"</span> &lt;&lt; <span class="built_in">endl</span>; &#125;;</span><br><span class="line">	<span class="function"><span class="keyword">void</span> <span class="title">inputData</span><span class="params">()</span> </span>&#123;</span><br><span class="line">		Publication::inputData();</span><br><span class="line">		<span class="built_in">cin</span> &gt;&gt; playtime;</span><br><span class="line">		<span class="built_in">cout</span> &lt;&lt; <span class="built_in">endl</span>;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="function"><span class="keyword">void</span> <span class="title">display</span><span class="params">()</span> </span>&#123;</span><br><span class="line">		Publication::display();</span><br><span class="line">		<span class="built_in">cout</span> &lt;&lt; playtime &lt;&lt; <span class="built_in">endl</span>;</span><br><span class="line">	&#125;</span><br><span class="line"><span class="keyword">private</span>:</span><br><span class="line">	<span class="keyword">int</span> playtime;</span><br><span class="line">&#125;;</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span> </span>&#123;</span><br><span class="line">	Book b;</span><br><span class="line">	b.inputData();</span><br><span class="line">	b.display();</span><br><span class="line">	system(<span class="string">"pause"</span>);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p>问题是在于<code>system(&quot;pause&quot;)</code>语句，在调用析构函数之前就已经停止了进程，所以无法观察到析构函数调用的情况，而且类内函数inputData和display的返回类型必须是void。还有一点，在使用vistual stdio2017时，F5后执行结束黑框会一闪而过，而VC6.0则不会出现这样的问题，具体等作业完成后再总结。最后，在使用vc6.0时，一定要编译后再执行代码。</p>
-
-          
+          <p>&#160;&#160;&#160;&#160;&#160;&#160;大一下半学期我开始系统地学习C++语言，现在将会把学习中遇到的问题及解决方案放在这里，积累经验，Fighting!</p>
+<h3 id="问题一：开发工具的安装"><a href="#问题一：开发工具的安装" class="headerlink" title="问题一：开发工具的安装"></a>问题一：开发工具的安装</h3><p>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;这里我使用的是Visual Stdio 2017版本，第一次安装时我一路默认安装，最后发现安装后并不能进行C++的开发。原因是在安装过程中，安装驱动会提示所要进行的开发任务，这时要选择C++，安装完成后才能进行C++的开发。</p>
+<h3 id="问题二：程序写好了但不能运行（F5为灰色）"><a href="#问题二：程序写好了但不能运行（F5为灰色）" class="headerlink" title="问题二：程序写好了但不能运行（F5为灰色）"></a>问题二：程序写好了但不能运行（F5为灰色）</h3><p>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;在新建时要注意新建项目而不是文件，新建文件的话生成的xx.cpp是无法编译运行的，需要新建项目后写入代码生成xx.sln才能编译运行。<img src="C:\Users\cjy\blog\source\_posts\cpp的学习\example.PNG" alt="example.PNG"></p>
+<h3 id="问题三：Visual-Stdio-2017版本只要修改了文件名就打不开（2019512）"><a href="#问题三：Visual-Stdio-2017版本只要修改了文件名就打不开（2019512）" class="headerlink" title="问题三：Visual Stdio 2017版本只要修改了文件名就打不开（2019512）"></a>问题三：Visual Stdio 2017版本只要修改了文件名就打不开（2019512）</h3><p>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;在实践中，我有几次修改了文件夹的名称，就不能再打开了，xx.cpp的文件可以用vc6.0打开但中文注释全是乱码。既然如此，，，那我就不修改文件名了（笑cry），今天在百度上学到了新的建立cpp文件的方法，是建立一个空项目，再右键源文件选择新建cpp文件、.h头文件、类文件。感觉这样的新建可能会更灵活一些。</p>
+<h3 id="问题四：析构函数没有被调用（2019-5-23）"><a href="#问题四：析构函数没有被调用（2019-5-23）" class="headerlink" title="问题四：析构函数没有被调用（2019.5.23）"></a>问题四：析构函数没有被调用（2019.5.23）</h3><p>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;在C++习题四书面作业中，编程出现了小问题，
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2019/04/05/cpp的学习/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
-    </div>
+    </p></div>
     
     
     
@@ -555,7 +557,7 @@
       
         
           
-            <p>​       之前提到我只能通过本地访问自己的博客网站，如果在URL搜索 <em><a href="http://AndreaCJY.github.io">http://AndreaCJY.github.io</a></em> 则会出现无法访问的情况。刚才发现又可以外部访问了，原因是联网方式，之前在开发的时候使用的是手机热点联网，刚才在访问时我使用网卡接入。不仅是网速更快，由于IP地址的不同，接入网点也有限制。可能是网络所在地不同，我的联通卡能够访问的网站有限（你们懂得）。总之现在问题解决啦！</p>
+            <p> &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;之前提到我只能通过本地访问自己的博客网站，如果在URL搜索 <em><a href="http://AndreaCJY.github.io">http://AndreaCJY.github.io</a></em> 则会出现无法访问的情况。刚才发现又可以外部访问了，原因是联网方式，之前在开发的时候使用的是手机热点联网，刚才在访问时我使用网卡接入。不仅是网速更快，由于IP地址的不同，接入网点也有限制。可能是网络所在地不同，我的联通卡能够访问的网站有限（你们懂得）。总之现在问题解决啦！</p>
 <p>———–我是时间分割线————</p>
 <p>2019.4.7</p>
 <p>意外地，我再次用手机热点试着打开这个博客网站，居然打开了？！天啊，，，手机也能够打开了，我现在真的很迷惑，，，</p>
@@ -677,7 +679,7 @@
 
       
         
-          <p>开学将近一个月啦，这个学期的感觉与上个学期初来乍到的感觉有点不同，邮电大学也有了家的感觉，寝室成了我的根据地。这个月过得好快啊，计算机二级月底就要考了，然而我的C语言有一段时间没碰了，，，没关系，突击吧，相信自己。</p>
+          <p>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;开学将近一个月啦，这个学期的感觉与上个学期初来乍到的感觉有点不同，邮电大学也有了家的感觉，寝室成了我的根据地。这个月过得好快啊，计算机二级月底就要考了，然而我的C语言有一段时间没碰了，，，没关系，突击吧，相信自己。</p>
 <p>
           <!--noindex-->
           <div class="post-button text-center">
@@ -803,7 +805,7 @@
       
         
           
-            <p>开学第二周，对即将到来的计算机二级C语言设计考试进行准备。在上机实验中，我主要发现了几种常见问题，写在下面。</p>
+            <p>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;开学第二周，对即将到来的计算机二级C语言设计考试进行准备。在上机实验中，我主要发现了几种常见问题，写在下面。</p>
 <p>1.如果定义变量时，将其定义为int类型，而输出时在printf中写入%f，即不对应，编译时不会报错，但会运行失败。</p>
 <p>2.注意每条命令后的分号一定是英文形式，中文会报错。</p>
 <p>3.后面遇到问题再来补充。</p>
@@ -925,7 +927,7 @@
 
       
         
-          <p>第一次认识到原来建立一个网站需要用到这么多知识（作业只写了静态页面，真是惭愧），这里写一点建立在线答题网站的小步骤，日后再有填充的再来改正。</p>
+          <p>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;第一次认识到原来建立一个网站需要用到这么多知识（作业只写了静态页面，真是惭愧），这里写一点建立在线答题网站的小步骤，日后再有填充的再来改正。</p>
 <h2 id="平台：服务器"><a href="#平台：服务器" class="headerlink" title="平台：服务器"></a>平台：服务器</h2><p>电脑主机的IP可以作为服务器使用，主流为windows2008和linx,主要看使用的语言，例如：php、jsp、.net</p>
 <h2 id="数据库"><a href="#数据库" class="headerlink" title="数据库"></a>数据库</h2><p>一般使用spl,mysql或access重点：数据库建立时要考虑好今后会发生的逻辑关系。</p>
 <h2 id="动态网页"><a href="#动态网页" class="headerlink" title="动态网页"></a>动态网页</h2><p>
@@ -1052,7 +1054,7 @@
 
       
         
-          <p>费了九牛二虎之力终于建好了！这个博客用于记录学习心得、读书笔记以及日常趣事，hexo的用法我现在还在研究，日后希望能做出更有特色的页面。在搭建博客的时候遇到了很多问题，最让我不能理解的是除了我，其他人都能通过搜索<a href="https://AndreaCJY.github.io/">AndreaCJY</a>访问到此网站！这个待我找到原因再写文说明吧。</p>
+          <p>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;费了九牛二虎之力终于建好了！这个博客用于记录学习心得、读书笔记以及日常趣事，hexo的用法我现在还在研究，日后希望能做出更有特色的页面。在搭建博客的时候遇到了很多问题，最让我不能理解的是除了我，其他人都能通过搜索<a href="https://AndreaCJY.github.io/">AndreaCJY</a>访问到此网站！这个待我找到原因再写文说明吧。</p>
 <h1 id="Markdown的开始"><a href="#Markdown的开始" class="headerlink" title="Markdown的开始"></a>Markdown的开始</h1><p>编写软件选择Typora，下面是Markdown语法及Typora快捷键用法（部分）</p>
 <h2 id="Markdown语法"><a href="#Markdown语法" class="headerlink" title="Markdown语法"></a>Markdown语法</h2><h3 id="（1）标题"><a href="#（1）标题" class="headerlink" title="（1）标题"></a>（1）标题</h3><p><strong>Markdown 语法：</strong></p>
 <figure class="highlight clean"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"># 一级标题</span><br><span class="line">## 二级标题</span><br><span class="line">### 三级标题</span><br><span class="line">#### 四级标题</span><br><span class="line">##### 五级标题</span><br><span class="line">###### 六级标题</span><br></pre></td></tr></table></figure>
